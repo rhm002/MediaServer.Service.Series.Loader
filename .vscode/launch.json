@@ -1,0 +1,40 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Series Loader (mssql)",
+            "request": "launch",
+            "mainClass": "org.mundell.mediaservice.service.series.loader.Application",
+            "projectName": "series-loader-service",
+            "vmArgs": "-Dspring.profiles.active=mssql",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Series Loader (psql-docker)",
+            "request": "launch",
+            "mainClass": "org.mundell.mediaservice.service.series.loader.Application",
+            "projectName": "series-loader-service",
+            "vmArgs": "-Dspring.profiles.active=psql-docker",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Series Loader (mssql-docker)",
+            "request": "launch",
+            "mainClass": "org.mundell.mediaservice.service.series.loader.Application",
+            "projectName": "series-loader-service",
+            "vmArgs": "-Dspring.profiles.active=mssql-docker",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Attach: Series Loader (remote/docker)",
+            "request": "attach",
+            "hostName": "localhost",
+            "port": 5005,
+            "projectName": "series-loader-service"
+        }
+    ]
+}
