@@ -57,7 +57,7 @@ MediaServer.Service.Series.Loader/
 
 ## Dependencies
 
-Spring Boot **4.1.1**, Java **25**.
+Spring Boot **4.2.0**, Java **25**.
 
 Internal: `org.mundell:utilities:2.0`, `org.mundell:common:2.0`, `org.mundell:dal-common:2.0`, `org.mundell.mediaserver:dal:2.0` (Series/SeriesEpisode/Genre), `org.mundell.mediaserver:tmdb-dal:2.0` (TmdbShow).
 
